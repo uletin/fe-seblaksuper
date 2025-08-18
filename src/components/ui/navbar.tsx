@@ -2,7 +2,6 @@
 
 import { IconMenu2, IconMoon, IconSun } from "@tabler/icons-react";
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import SeblakSuperLogo from "./logo";
 
