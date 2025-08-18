@@ -3,7 +3,6 @@ import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/ui/navbar";
-import { Suspense } from "react";
 
 export const bebasNue = Bebas_Neue({
   subsets: ["latin"],
@@ -30,9 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="relative flex flex-col">
-            <Suspense fallback={"Loading..."}>
-              <Navbar />
-            </Suspense>
+            <Navbar />
             <div className="mt-8 lg:mt-16">{children}</div>
           </main>
         </ThemeProvider>
