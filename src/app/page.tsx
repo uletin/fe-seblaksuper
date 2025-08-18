@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="flex flex-col gap-4 items-center h-screen p-4 justify-between ">
+      <section className="flex flex-col gap-4 items-center h-screen justify-between ">
         <div className="flex flex-col lg:flex-row justify-between px-4 pt-16 lg:p-16 lg:items-center border-2 h-full w-full border-foreground rounded-lg bg-linear-to-t from-[#E3492F] to-[#FF9900]">
           <h1 className={`text-3xl lg:text-5xl font-semibold`}>
             Balikin moodmu <br />
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col grow-0">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-background min-h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 bg-background min-h-screen">
           {/* Kiri Atas */}
           <div
             onClick={() => router.push("/menu")}

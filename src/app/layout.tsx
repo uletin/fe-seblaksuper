@@ -30,7 +30,7 @@ export default function RootLayout({
         >
           <main className="relative flex flex-col">
             <Navbar />
-            <div className="mt-8 lg:mt-16">{children}</div>
+            <div className="mt-12 lg:mt-16 p-4">{children}</div>
           </main>
         </ThemeProvider>
       </body>
