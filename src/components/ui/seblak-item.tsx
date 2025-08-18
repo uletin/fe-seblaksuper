@@ -19,11 +19,11 @@ export default function SeblakItem({
 
   return (
     <div
-      className={`${isBakground} h-full flex flex-col items-center gap-12 rounded-b-full lg:w-[200px]`}
+      className={`${isBakground} h-full flex flex-col items-center gap-12 rounded-b-full lg:w-[200px] justify-between`}
     >
       <div className="p-4 flex flex-col items-center justify-between gap-2">
-        <h1 className="text-2xl font-light font-bebas">{title}</h1>
-        <p className="text-4xl font-bold">{price} K</p>
+        <h1 className="text-2xl font-light font-bebas text-center">{title}</h1>
+        <p className="text-4xl font-bold text-center">{price} K</p>
       </div>
       <div>
         <Image src={imgSrc} height={300} width={300} alt={imgAlt} />
