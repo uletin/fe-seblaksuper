@@ -43,9 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${monserrat.className} ${bebasNue.className} antialiased`}
-      >
+      <body className={`${bebasNue.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
