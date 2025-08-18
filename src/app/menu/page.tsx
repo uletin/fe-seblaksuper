@@ -4,7 +4,7 @@ import { seblaks } from "@/mock/mock-seblak";
 export default function MenuPage() {
   return (
     <section className="flex items-center justify-center">
-      <section className="flex gap-4 lg:gap-12 justify-between lg:justify-center flex-wrap">
+      <section className="grid grid-cols-2 lg:grid-cols-6 gap-4">
         {seblaks.map((seblak, index) => (
           <SeblakItem
             key={seblak.title}
