@@ -19,7 +19,7 @@ export default function SeblakItem({
 
   return (
     <div
-      className={`${isBakground} h-full flex flex-col items-center gap-12 rounded-b-full w-[170px] lg:w-[200px]`}
+      className={`${isBakground} h-full flex flex-col items-center gap-12 rounded-b-full w-[160px] lg:w-[200px]`}
     >
       <div className="p-4 flex flex-col items-center justify-between gap-2">
         <h1 className="text-2xl font-light font-bebas">{title}</h1>
