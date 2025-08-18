@@ -1,30 +1,38 @@
-import Navbar from "@/components/ui/navbar";
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <main className="relative flex flex-col">
-      <Navbar />
-      <section className="flex flex-col gap-4 items-center h-screen p-4 mt-12 justify-between ">
-        <div className="flex flex-col lg:flex-row justify-between px-4 pt-16 lg:p-16 lg:items-center border-4 h-full w-full border-foreground rounded-lg bg-linear-to-t from-[#E3492F] to-[#FF9900]">
-          <h1 className="text-2xl lg:text-5xl font-semibold">
+    <>
+      <section className="flex flex-col gap-4 items-center h-screen p-4 justify-between ">
+        <div className="flex flex-col lg:flex-row justify-between px-4 pt-16 lg:p-16 lg:items-center border-2 h-full w-full border-foreground rounded-lg bg-linear-to-t from-[#E3492F] to-[#FF9900]">
+          <h1 className={`text-3xl lg:text-5xl font-semibold`}>
             Balikin moodmu <br />
             dengan satu suapan
           </h1>
-          <Image
-            className="right-40"
-            src={"/seblak-bakso.png"}
-            width={200}
-            height={200}
-            alt="seblak super di balikpapan, seblak bakso"
-          />
+          <div>
+            <Image
+              className="right-40"
+              src={"/seblak/seblak-komplit.png"}
+              width={200}
+              height={200}
+              alt="seblak super di balikpapan, seblak bakso"
+            />
+          </div>
         </div>
       </section>
       <section className="flex flex-col grow-0">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-background min-h-screen">
           {/* Kiri Atas */}
-          <div className="bg-foreground text-background p-4 rounded-xl flex flex-col justify-center">
-            <h3 className="text-xl font-semibold leading-tight">
+          <div
+            onClick={() => router.push("/menu")}
+            className="border-2 border-foreground text-foreground p-4 rounded-xl flex flex-col justify-center hover:cursor-pointer hover:bg-foreground hover:text-background"
+          >
+            <h3 className="text-2xl font-semibold leading-tight">
               Pilihan menu terbaik
               <br />
               lihat disini!
@@ -42,8 +50,8 @@ export default function Home() {
           </div>
 
           {/* Kanan Atas */}
-          <div className="bg-foreground p-4 rounded-xl flex flex-col justify-center">
-            <h3 className="text-lg font-semibold leading-snug text-background">
+          <div className="border-2 border-foreground p-4 rounded-xl flex flex-col justify-center hover:bg-foreground hover:text-background">
+            <h3 className="text-2xl font-semibold leading-snug">
               Mau pesan untuk acara?
               <br />
               Yuk kita lihat!
@@ -51,8 +59,8 @@ export default function Home() {
           </div>
 
           {/* Kiri Bawah */}
-          <div className="bg-foreground text-background p-4 rounded-xl flex flex-col justify-center">
-            <h3 className="text-lg font-semibold leading-snug">
+          <div className="border-2 border-foreground text-foreground p-4 rounded-xl flex flex-col justify-center hover:bg-foreground hover:text-background">
+            <h3 className="text-2xl font-semibold leading-snug">
               Tempat yang eye catching
               <br />
               Suasana oke
@@ -62,8 +70,8 @@ export default function Home() {
           </div>
 
           {/* Kanan Bawah */}
-          <div className="bg-foreground p-4 rounded-xl flex flex-col justify-center">
-            <h3 className="text-lg font-semibold leading-snug text-background">
+          <div className="border-2 border-foreground p-4 rounded-xl flex flex-col justify-center hover:bg-foreground hover:text-background">
+            <h3 className="text-2xl font-semibold leading-snug">
               Temukan lokasi kami
               <br />
               disini!
@@ -71,6 +79,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
