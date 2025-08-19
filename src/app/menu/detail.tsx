@@ -13,7 +13,7 @@ export default function MenuDetail({
   id,
 }: {
   open: boolean;
-  onOpenChange: any;
+  onOpenChange: React.Dispatch<React.SetStateAction<boolean>>;
   id: string | null;
 }) {
   const seblak = seblaks.find((item) => item.seblak_id === id);
