@@ -9,7 +9,7 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const router = useRouter();
   return (
-    <nav className="sticky w-[100%] top-8 h-[56px] px-4 z-0">
+    <nav className="sticky w-[100%] top-8 h-[56px] px-4 z-50">
       <div className="flex justify-between items-center h-full border-2 border-foreground bg-background text-foreground px-8 rounded-xl">
         <div
           onClick={() => router.push("/")}
