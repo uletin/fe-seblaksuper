@@ -6,12 +6,14 @@ export default function SeblakItem({
   title,
   price,
   isOdd,
+  onClick,
 }: {
   imgSrc: string;
   imgAlt: string;
   title: string;
   price: number;
   isOdd: boolean;
+  onClick: () => void;
 }) {
   const isBakground = isOdd
     ? "bg-linear-to-t from-[#E3492F] to-[#FF9900] text-foreground"
@@ -19,7 +21,8 @@ export default function SeblakItem({
 
   return (
     <div
-      className={`${isBakground} h-full flex flex-col items-center gap-12 rounded-b-full lg:w-[200px] justify-between`}
+      onClick={onClick}
+      className={`${isBakground} hover:cursor-pointer h-full flex flex-col items-center gap-12 rounded-b-full lg:w-[200px] justify-between`}
     >
       <div className="p-4 flex flex-col items-center justify-between gap-2">
         <h1 className="text-2xl font-light font-bebas text-center">{title}</h1>
