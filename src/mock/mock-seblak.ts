@@ -5,6 +5,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak bakso balikpapan",
     price: 22,
     title: "seblak bakso",
+    variant: "seblak",
   },
   {
     seblak_id: "1b9c2a6a-82f3-4d3d-92a9-2d678f89d7a1",
@@ -12,6 +13,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak ceker balikpapan",
     price: 20,
     title: "seblak ceker",
+    variant: "seblak",
   },
   {
     seblak_id: "7f6a14c4-4d25-4621-a1b2-8a93182ac916",
@@ -19,6 +21,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak komplit balikpapan",
     price: 22,
     title: "seblak komplit",
+    variant: "seblak",
   },
   {
     seblak_id: "bbf4a2fd-61fb-4c21-9d5c-36db2e8a5f48",
@@ -26,6 +29,7 @@ export const seblaks = [
     imgAlt: "seblak seafood di seblak super balikpapan",
     price: 22,
     title: "seblak seafood",
+    variant: "seblak",
   },
   {
     seblak_id: "d7a8db8d-9297-482a-b623-d0d8a2f3f6aa",
@@ -33,6 +37,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak sosis balikpapan",
     price: 20,
     title: "seblak sosis",
+    variant: "seblak",
   },
   {
     seblak_id: "05cf03a1-0f0f-4f65-8b63-59c4c84b8fcb",
@@ -40,6 +45,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak tempura balikpapan",
     price: 20,
     title: "seblak tempura",
+    variant: "seblak",
   },
   {
     seblak_id: "f4cf9bb2-67db-422c-b8ec-0803fa69debb",
@@ -47,6 +53,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak original balikpapan",
     price: 12,
     title: "seblak original",
+    variant: "seblak",
   },
   {
     seblak_id: "35c66246-47b2-4205-bf41-57a4cbf9647e",
@@ -54,6 +61,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak cireng balikpapan",
     price: 20,
     title: "seblak cireng",
+    variant: "seblak",
   },
   {
     seblak_id: "a49b0b31-75e5-4c3a-b7b1-40fc02e5a8a9",
@@ -61,6 +69,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak cilok balikpapan",
     price: 18,
     title: "seblak cilok",
+    variant: "seblak",
   },
   {
     seblak_id: "bcb46eb2-1f48-4c8f-9261-49f3a65bc818",
@@ -68,6 +77,7 @@ export const seblaks = [
     imgAlt: "seblak baso di seblak campur balikpapan",
     price: 18,
     title: "seblak campur",
+    variant: "seblak",
   },
   {
     seblak_id: "e509a230-5ee5-4a3b-a58e-ef4738a9db37",
@@ -75,6 +85,7 @@ export const seblaks = [
     imgAlt: "seblak baso di pentol mercon balikpapan",
     price: 15,
     title: "pentol mercon",
+    variant: "seblak",
   },
   {
     seblak_id: "a5d56f02-2f87-4e62-a88e-33d2ab9c2d3e",
@@ -82,5 +93,30 @@ export const seblaks = [
     imgAlt: "seblak baso di ceker mercon balikpapan",
     price: 15,
     title: "ceker mercon",
+    variant: "seblak",
+  },
+  {
+    seblak_id: "a5d56f02-2f87-4e62-a88e-33d2ab9c2d4e",
+    imgSrc: "/seblak/lalapan-ayam.png",
+    imgAlt: "rekomendasi lalapan ayam balikpapan",
+    price: 25,
+    title: "lalapan ayam",
+    variant: "lalapan",
+  },
+  {
+    seblak_id: "a5d56f02-2f87-4e62-a88e-33d2ab9c2d9e",
+    imgSrc: "/seblak/le-minerale.png",
+    imgAlt: "rekomendasi seblak balikpapan",
+    price: 5,
+    title: "air mineral",
+    variant: "minum",
+  },
+  {
+    seblak_id: "a5d56f02-2f87-4e62-a88e-33d2ab9c2d1e",
+    imgSrc: "/seblak/teh-pucuk.png",
+    imgAlt: "rekomendasi seblak balikpapan",
+    price: 5,
+    title: "teh pucuk",
+    variant: "minum",
   },
 ];
