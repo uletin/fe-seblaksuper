@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-between px-4 pt-16 lg:p-16 lg:items-center border-2 h-full w-full border-foreground rounded-lg bg-linear-to-t from-[#E3492F] to-[#FF9900]">
           <h1 className={`text-3xl lg:text-5xl font-semibold`}>
             Balikin moodmu <br />
-            dengan satu suapan
+            di seblak super
           </h1>
           <div>
             <Image

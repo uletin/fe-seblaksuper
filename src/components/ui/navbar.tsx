@@ -1,9 +1,23 @@
 "use client";
 
-import { IconMenu2, IconMoon, IconSun } from "@tabler/icons-react";
+import {
+  IconBuildingStore,
+  IconEmpathize,
+  IconMenu2,
+  IconMoon,
+  IconSoup,
+  IconSun,
+} from "@tabler/icons-react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import SeblakSuperLogo from "./logo";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./sheet";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -35,9 +49,36 @@ export default function Navbar() {
               </span>
             )}
           </button>
-          <button>
-            <IconMenu2 />
-          </button>
+          <Sheet>
+            <SheetTrigger>
+              <IconMenu2 />
+            </SheetTrigger>
+            <SheetContent>
+              <SheetHeader>
+                <SheetTitle className="text-2xl">Navigasi</SheetTitle>
+              </SheetHeader>
+              <div
+                className="px-4 flex flex-col gap-4"
+                onClick={() => router.push("/menu")}
+              >
+                <button className="flex gap-2 text-xl cursor-pointer">
+                  <IconSoup /> Menu
+                </button>
+                <button
+                  className="flex gap-2 text-xl cursor-pointer"
+                  onClick={() => router.push("/event")}
+                >
+                  <IconEmpathize /> Pesan Untuk Acara
+                </button>
+                <button
+                  className="flex gap-2 text-xl cursor-pointer"
+                  onClick={() => router.push("/about-us")}
+                >
+                  <IconBuildingStore /> Tentang Kami
+                </button>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
